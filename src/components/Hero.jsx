@@ -25,7 +25,7 @@ const Hero = () => {
                         I create stunning web experiences with modern technologies and innovative design.
                     </p>
                     <div className='flex space-x-4'>
-                        <a href='#projects' className='px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition'>
+                        <a href='#skills' className='px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition'>
                             View Work
                         </a>
                         <a href='#contact' className='px-6 py-3 border border-purple rounded-lg font-medium hover:bg-purple/20 transition decoration-purple-300'>
