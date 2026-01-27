@@ -9,10 +9,6 @@ import projectImg4 from '../assets/project4.avif';
 import projectImg5 from '../assets/project5.avif';
 import projectImg6 from '../assets/project6.avif';
 
-//Company logos
-import itAllLogo from '../assets/it_all_logo.jpg';
-import etsysLogo from '../assets/etsys_logo.png';
-import ieavLogo from '../assets/ieav_logo.png';
 
 
 export const assets = {
@@ -151,7 +147,7 @@ export const workData = [
     second_description: 
       "I collaborate in Agile Scrum teams, contributing to development, participating in code reviews, and working closely with other developers to deliver reliable and well-structured solutions.", 
     color: "purple",
-    companyLogo: itAllLogo
+    companyLogo: "/images/it_all_logo.jpg"
   },
   {
     role: "Developer",
@@ -160,7 +156,7 @@ export const workData = [
     description:
     "I work as a Full Stack Developer on web projects, building internal company systems using PHP, Laravel, JavaScript, and MySQL. I collaborate in Agile Scrum environments, working in sprints and leveraging modern frameworks to deliver efficient and scalable solutions.",
     color: "pink",
-    companyLogo: etsysLogo
+    companyLogo: "/images/etsys_logo.png"
   },
   {
     role: "Contributor",
@@ -169,6 +165,6 @@ export const workData = [
     description:
       "I gained my first professional experience with front-end and back-end development, working on bug fixes and providing technical support for Linux systems, which helped build a solid technical foundation.",
     color: "blue",
-    companyLogo: ieavLogo
+    companyLogo: "/images/ieav_logo.png"
   }
 ];
