@@ -47,9 +47,9 @@ const Navbar = () => {
             <div className='md:hidden'>
                 {
                     showMenu ? 
-                    <FaXmark onClick={()=>setShowMenu(!showMenu)} className='text-2x1 cursor-pointer'/> 
+                    <FaXmark onClick={()=>setShowMenu(!showMenu)} className='text-3xl text-white cursor-pointer'/> 
                     :
-                    <FaBars onClick={()=>setShowMenu(!showMenu)} className='text-2x1 cursor-pointer'/>
+                    <FaBars onClick={()=>setShowMenu(!showMenu)} className='text-3xl text-white cursor-pointer'/>
                 }
             </div>
         </div>
@@ -57,28 +57,28 @@ const Navbar = () => {
         {/* Menu mobile */}
         {
             showMenu && (
-                <div className='md:hidden mt-4 bg-dark-300 h-screen rounded-lg p-4 flex flex-col space-y-4 text-center justify-center'>
-                      <a onClick={()=>setShowMenu(!showMenu)} href="#home" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+                <div className='md:hidden mt-4 bg-dark-300 rounded-lg p-6 flex flex-col space-y-6 text-center'>
+                      <a onClick={()=>setShowMenu(!showMenu)} href="#home" className='text-white/80 text-lg transition duration-300 hover:text-purple'>
                         <span>Home</span>
                     </a>
 
-                    <a onClick={()=>setShowMenu(!showMenu)} href="#about" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+                    <a onClick={()=>setShowMenu(!showMenu)} href="#about" className='text-white/80 text-lg transition duration-300 hover:text-purple'>
                         <span>About</span>
                     </a>
 
-                    <a onClick={()=>setShowMenu(!showMenu)} href="#skills" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+                    <a onClick={()=>setShowMenu(!showMenu)} href="#skills" className='text-white/80 text-lg transition duration-300 hover:text-purple'>
                         <span>Skills</span>
                     </a>
 
-                    <a onClick={()=>setShowMenu(!showMenu)} href="#projects" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+                    {/* <a onClick={()=>setShowMenu(!showMenu)} href="#projects" className='text-white/80 text-lg transition duration-300 hover:text-purple'>
                         <span>Projects</span>
-                    </a>
+                    </a> */}
 
-                    <a onClick={()=>setShowMenu(!showMenu)} href="#experience" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+                    <a onClick={()=>setShowMenu(!showMenu)} href="#experience" className='text-white/80 text-lg transition duration-300 hover:text-purple'>
                         <span>Experience</span>
                     </a>
 
-                    <a onClick={()=>setShowMenu(!showMenu)} href="#contact" className='relative text-white/80 transition duration-300 hover:text-purple group'>
+                    <a onClick={()=>setShowMenu(!showMenu)} href="#contact" className='text-white/80 text-lg transition duration-300 hover:text-purple'>
                         <span>Contact</span>
                     </a>
                 </div>
