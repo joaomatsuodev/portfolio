@@ -1,6 +1,7 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot, FaLanguage, FaSchool, FaGraduationCap, FaUserGraduate } from 'react-icons/fa';
 
-import profileImgJoaoVictor from '../assets/joao_victor.jpeg';
+import profileImgJoaoVictorProfile from '../assets/joao_victor_profile.jpeg';
+import profileImgJoaoVictor from '../assets/joao_victor.webp';
 import projectImg1 from '../assets/project1.avif';
 import projectImg2 from '../assets/project2.avif';
 import projectImg3 from '../assets/project3.avif';
@@ -10,27 +11,27 @@ import projectImg6 from '../assets/project6.avif';
 
 
 export const assets = {
-    profileImgJoaoVictor,
+    profileImgJoaoVictor, profileImgJoaoVictorProfile
 }
 
 
 export const aboutInfo = [
     {
-      icon: FaLightbulb,
-      title: 'Innovative',
-      description: 'I love creating unique solutions to complex problems with cutting-edge technologies.',
+      icon: FaUserGraduate,
+      title: 'Postgraduate Degree',
+      description: 'Software Engineering – Faculdade Metropolitana (Jun 2025 – Jun 2026)',
       color: 'text-purple'
     },
     {
-      icon: FaPaintBrush,
-      title: 'Design Oriented',
-      description: 'Beautiful design and user experience are at the heart of everything I create.',
+      icon: FaGraduationCap,
+      title: 'Associate Degree',
+      description: 'Systems Analysis and Development – Universidade Anhembi Morumbi (Jun 2021 – Feb 2024)',
       color: 'text-pink'
     },
     {
-      icon: FaCode,
-      title: 'Clean Code',
-      description: 'I write maintainable, efficient code following best practices and modern patterns.',
+      icon: FaSchool,
+      title: 'Technical Degree',
+      description: 'Information Technology – Colégio Joseense (Feb 2017 – Dec 2019)',
       color: 'text-blue'
     }
   ];
@@ -42,38 +43,37 @@ export const skills = [
     title: 'Frontend Development',
     icon: FaReact,
     description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['React', 'Vue.js', 'Angular', 'TypeScript']
+    tags: ['JavaScript', 'React', 'Tailwind CSS', 'Jquery', 'Ajax']
   },
   {
     title: 'Backend Development',
     icon: FaServer,
     description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express', 'Django', 'Laravel']
+    tags: ['Pyhton', 'Java', 'PHP', 'Laravel', 'CodeIgniter']
   },
   {
     title: 'Database Management',
     icon: FaDatabase,
     description: 'Designing and optimizing databases for performance and scalability.',
-    tags: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase']
-  },
-  {
-    title: 'Mobile Development',
-    icon: FaMobileAlt,
-    description: 'Building cross-platform mobile applications with modern tools.',
-    tags: ['React Native', 'Flutter', 'Ionic', 'Swift']
+    tags: ['MySQL', 'Oracle SQL']
   },
   {
     title: 'Cloud & DevOps',
     icon: FaCloud,
     description: 'Deploying and managing applications in cloud environments.',
-    tags: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
+    tags: ['AWS S3']
   },
   {
     title: 'Tools & Technologies',
     icon: FaTools,
     description: 'Essential tools and technologies I use in my development workflow.',
-    tags: ['Git & GitHub', 'Webpack', 'Figma', 'Jest']
-  }
+    tags: ['Git', 'GitHub', 'GitLab', 'Jira']
+  },  {
+    title: 'Languages',
+    icon: FaLanguage,
+    description: 'Communication skills for professional and technical environments.',
+    tags: ['English: Intermediate', 'Portuguese: Native' ]
+  },
 ];
 
 
@@ -138,27 +138,32 @@ export const projects = [
 
 export const workData = [
   {
-    role: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    duration: "2020 - Present",
+    role: "Mid-Level Developer",
+    company: "IT.ALL",
+    duration: "Mar/2022 – Present",
     description:
-      "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
-    color: "purple"
+      "I work as a Full Stack Developer on web projects using PHP, Laravel, CodeIgniter, Java, JavaScript, React, and related front-end technologies. I have experience with cloud services, such as Amazon S3 for file storage and data management, as well as working with relational databases, including MySQL and Oracle SQL. I also have knowledge of Git, performing code version control with branches.",
+    second_description: 
+      "I collaborate in Agile Scrum teams, contributing to development, participating in code reviews, and working closely with other developers to deliver reliable and well-structured solutions.", 
+    color: "purple",
+    companyLogo: "src/assets/it_all_logo.jpg"
   },
   {
-    role: "Web Developer",
-    company: "Digital Solutions LLC",
-    duration: "2018 - 2020",
+    role: "Developer",
+    company: "Indústria e Tecnologia em Sistemas ETSYS",
+    duration: "Jul/2021 – Feb/2022",
     description:
-      "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
-    color: "pink"
+    "I work as a Full Stack Developer on web projects, building internal company systems using PHP, Laravel, JavaScript, and MySQL. I collaborate in Agile Scrum environments, working in sprints and leveraging modern frameworks to deliver efficient and scalable solutions.",
+    color: "pink",
+    companyLogo: "src/assets/etsys_logo.png"
   },
   {
-    role: "Junior Developer",
-    company: "StartUp Ventures",
-    duration: "2016 - 2018",
+    role: "Contributor",
+    company: "Instituto de Estudos Avançados (IEAv)",
+    duration: "Jun/2021 – Jul/2021",
     description:
-      "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
-    color: "blue"
+      "I gained my first professional experience with front-end and back-end development, working on bug fixes and providing technical support for Linux systems, which helped build a solid technical foundation.",
+    color: "blue",
+    companyLogo: "src/assets/ieav_logo.png"
   }
 ];

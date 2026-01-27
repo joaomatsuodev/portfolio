@@ -22,11 +22,11 @@ const Hero = () => {
                         Full Stack Developer
                     </h2>
                     <p className='text-lg text-gray-300 mb-8'>
-                        I create stunning web experiences with modern technologies and innovative design.
+                        Full Stack Developer with over 4 years of experience building modern web, driven by new challenges and continuous learning.
                     </p>
                     <div className='flex space-x-4'>
                         <a href='#skills' className='px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition'>
-                            View Work
+                            View Skills
                         </a>
                         <a href='#contact' className='px-6 py-3 border border-purple rounded-lg font-medium hover:bg-purple/20 transition decoration-purple-300'>
                             Contact Me
@@ -48,7 +48,7 @@ const Hero = () => {
                             //     ease: "easeInOut"
                             // }}
                             className='relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover object-top z-10 animated-float'
-                            src={assets.profileImgJoaoVictor}  alt='Profile'
+                            src={assets.profileImgJoaoVictorProfile}  alt='Profile'
                         />
                     </div>
                 </div>
