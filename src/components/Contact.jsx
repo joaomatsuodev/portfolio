@@ -5,7 +5,7 @@ import { FaEnvelope, FaLinkedin, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 const Contact = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y:50 }}
+            initial={{ opacity: 0, y:5 }}
             whileInView={{ opacity:1, y:0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
             viewport={{ once: false, amount:0.2 }}
@@ -78,7 +78,7 @@ const Contact = () => {
                         <div className='pt-4'>
                             <h3 className='text-lg font-semibold mb-4'>Follow me in my Linkedin</h3>
                             <div className='flex space-x-4'>
-                                <a href="#" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-white hover:bg-purple hover:text-white transition duration-300'>
+                                <a href="https://www.linkedin.com/in/joão-victor-matsuo-de-freitas-49664217b/" target="_blank" className='w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center text-white hover:bg-purple hover:text-white transition duration-300'>
                                     <FaLinkedin />
                                 </a>
                             </div>

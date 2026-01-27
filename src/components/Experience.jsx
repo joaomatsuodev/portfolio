@@ -5,7 +5,7 @@ import { workData } from '../assets/assets'
 const Experience = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y:50 }}
+            initial={{ opacity: 0, y:5 }}
             whileInView={{ opacity:1, y:0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
             viewport={{ once: false, amount:0.2 }}
@@ -25,9 +25,9 @@ const Experience = () => {
                     <div className='space-y-12'>
                         {
                             workData.map((data, index) => (
-                                <div key={index} className="relative pl-12 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-purple cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                <div key={index} className="relative md:pl-12 md:before:content-[''] md:before:absolute md:before:left-0 md:before:top-0 md:before:w-[2px] md:before:h-full md:before:bg-purple cursor-pointer hover:-translate-y-2 transition-all duration-300">
                                     {/* Timeline */}
-                                    <div className='absolute left-[-0.5rem] top-0 w-6 h-6 rounded-full bg-purple'>
+                                    <div className='hidden md:block absolute left-[-11px] top-0 w-6 h-6 rounded-full bg-purple'>
 
                                     </div>
 
@@ -41,8 +41,17 @@ const Experience = () => {
                                                 {data.duration}
                                             </span>
                                         </div>
-                                        <p className='text-gray-400 mb-2'>{data.company}</p>
+                                        <p className='text-gray-400 mb-2 flex items-center gap-2 pb-3'>
+                                            <img 
+                                                src={data.companyLogo} 
+                                                alt={data.company} 
+                                                className="w-7 h-7 object-contain rounded" 
+                                            />
+                                            {data.company}
+                                        </p>
                                         <p className='text-gray-300'>{data.description}</p>
+                                        <br></br>
+                                        <p className='text-gray-300'>{data.second_description}</p>
                                     </div>
                                 </div>
                             ))
