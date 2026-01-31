@@ -64,17 +64,6 @@ const Contact = () => {
                                 <p className='text-gray-400'>joaomatsuo@gmail.com</p>
                             </div>
                         </div>
-
-                        <div className='flex items-start'>
-                            <div className='text-purple text-2xl mr-4'>
-                                <FaPhone />
-                            </div>
-                            <div>
-                                <h3 className='text-lg font-semibold mb-2'>Phone</h3>
-                                <p className='text-gray-400'>+55 12 98109-9424</p>
-                            </div>
-                        </div>
-
                         <div className='pt-4'>
                             <h3 className='text-lg font-semibold mb-4'>Follow me in my Linkedin</h3>
                             <div className='flex space-x-4'>
